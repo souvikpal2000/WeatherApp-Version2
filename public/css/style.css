@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:wght@200;300;400;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Piazzolla', serif;
+}
+:root{
+    --main-bg: #1e272e;
+    --main-color: #0097e6;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.row{
+    margin: 0;
+}
+.mainMenu{
+    background-color: var(--main-bg);
+}
+.navbar{
+    color: #fff;
+    background-color: var(--main-bg);
+    padding: 1rem;
+}
+.navbar a{
+    color: #fff;
+}
+.navbar a:hover{
+    color: var(--main-color);
+}
+.navbar-toggler{
+    background-color: #3c5364;
+}
+.fa-snowflake{
+    transition: all linear;
+    animation: rot 2s linear infinite;
+    color: var(--main-color);
+}
+@keyframes rot{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.mainHeader{
+    margin-top: 100px;
+}
+.main-header-left p{
+    font-size: 1.5rem;
+}
+.main-header-left h1{
+    font-size: 2rem;
+    margin: 1rem 0 3rem 0;
+    text-transform: capitalize;
+}
+.textColor{
+    color: var(--main-color);
+}
+.main-header-left button{
+    border: none;
+    padding: 0.8rem 1.8rem;
+    font-size: 1rem;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    box-shadow: 0 8px 6px -6px #000;
+}
+.main-header-left button:hover{
+    box-shadow: 0 8px 6px -6px var(--main-color);
+}
+.carousel-control-prev, .carousel-control-next {
+    display: none;
+}
+footer{
+    width: 100%;
+    background-color: var(--main-bg);
+    margin-top: auto;
+}
+footer p{
+    margin: 0;
+    text-align: center;
+    color: #fff;
+    line-height: 4rem;
+    font-size: 1rem;
+}
+
+.about-header-right p{
+    font-size: 1.5rem;
+}
+.about-header-right h1{
+    font-size: 2rem;
+    margin: 1rem 0 3rem 0;
+    text-transform: capitalize;
+}
+.textColor{
+    color: var(--main-color);
+}
+.about-header-right button{
+    border: none;
+    padding: 0.8rem 1.8rem;
+    font-size: 1rem;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    box-shadow: 0 8px 6px -6px #000;
+}
+.about-header-right button:hover{
+    box-shadow: 0 8px 6px -6px var(--main-color);
+}
+@media (max-width: 768px) {
+    .about-header-left{
+        height: auto;
+        margin-top: -2rem;
+    }
+    .about-header-right{
+        height: auto;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+    }
+}
+.dp{
+    width: 18rem;
+}
+.errimg img{
+    width: 55rem;
+}
+.error{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+@media (max-width: 768px) {
+    .error{
+        height: auto;
+        margin-top: 5rem;
+    }
+}
+.tempInfo{
+    width: 30rem;
+    margin: auto;
+    min-height: 20rem;
+    background-color: #323544;
+    border-radius: 1rem;
+    font-family: "Roboto", sans-serif;
+}
+
+.topLayer{
+    width: 100%;
+    height: 20%;
+    background-color: #2d303d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1rem;
+}
+.topLayer p{
+    color: #fff;
+    font-weight: 300;
+    padding: 1rem;
+}
+.mainLayer{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+.mainLayer #city{
+    color: #bfc1c8;
+    font-weight: 300;
+    font-size: 2rem;
+}
+.mainLayer .middleLayer{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+.mainLayer .middleLayer p, 
+.mainLayer .middleLayer .fa{
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.fa{
+    color: #009ad8;
+}
+.dataHide{
+    visibility: hidden;
+}
+.dataShow{
+    visibility: visible;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 900;
+}
+.tempForm{
+    width: 60%;
+    position: relative;
+    margin: -4rem auto 2rem;
+}
+.tempForm input[type="text"]{
+    width: 100%;
+    height: 2rem;
+    padding: 1.5rem 3rem 1.5rem 1.5rem;
+    background: #1e202b;
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    border-radius: 3rem;
+}
+::placeholder{
+    color: #bfc1c8;
+}
+.tempForm input[type="submit"]{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: none;
+    background: #009ad8;
+    padding: 0 2rem;
+    border-radius: 3rem;
+    color: white;
+    font-size: 1.2rem;
+}
+.tempForm input[type="submit"]:hover{
+    color: #009ad8;
+    background-color: #fff;
+}
+@media (max-width: 768px) {
+    .main-header-left{
+        height: auto;
+        margin-top: -2rem;
+    }
+    .main-header-right{
+        height: auto;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+    }
+    .tempForm{
+        width: auto;
+    }
+}
