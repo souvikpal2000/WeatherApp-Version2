@@ -19,6 +19,8 @@ const getInfo = async (event) => {
     try{
         if(cityName.value == ""){
             city.innerText = "Plz Write City Name";
+            middleLayer.setAttribute("class", "dataHide");
+            middleLayer.classList.remove("dataShow");
         }
         else{
             try{
@@ -51,6 +53,8 @@ const getInfo = async (event) => {
             }
             catch{
                 city.innerText = "Plz Enter Valid City Name";
+                middleLayer.setAttribute("class", "dataHide");
+                middleLayer.classList.remove("dataShow");
             }
         }
     }
